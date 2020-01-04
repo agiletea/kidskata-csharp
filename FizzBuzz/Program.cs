@@ -30,6 +30,26 @@ namespace FizzBuzz
         static void PrintNumberRange(int startNumber, int endNumber)
         {
             // START here!            
+            for (int index = startNumber; index <= endNumber; index++)
+            {
+                if (index%15==0)
+                {
+                    PrintWord("fizzbuzz");
+                }
+                else if (index%5==0)
+                {
+                    PrintWord("buzz");
+                }
+                else if (index%3==0)
+                {
+                    PrintWord("fizz");
+                }
+                else
+                {   
+                    PrintNumber(index);
+                }
+                PrintSpace();
+            }
         }
     }
 }
